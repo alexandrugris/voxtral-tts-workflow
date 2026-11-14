@@ -82,7 +82,7 @@ class TTSGenerateWorkflow:
         return result
 
     @workflows.workflow.query(name="audio_chunk")
-    async def audio_chunk(
+    def audio_chunk(
         self,
         offset: int = 0,
         length: int = 100_000,
